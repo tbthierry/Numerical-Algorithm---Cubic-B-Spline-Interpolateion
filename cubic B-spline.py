@@ -86,7 +86,7 @@ if __name__ == '__main__':
     dataPoint = []
     inputFile = open("example1.txt", "rt")
     for line in inputFile:
-        dataPoint.append(list(map(int, line.strip().split(" "))))
+        dataPoint.append(list(map(float, line.strip().split(" "))))
 
     # default parameters
     degree = 3
