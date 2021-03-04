@@ -84,7 +84,7 @@ def endpointFunction(knots_list, u):
 if __name__ == '__main__':
     # read input data
     dataPoint = []
-    inputFile = open("example1.txt", "rt")
+    inputFile = open("test2.txt", "rt")
     for line in inputFile:
         dataPoint.append(list(map(float, line.strip().split(" "))))
 
@@ -142,7 +142,7 @@ if __name__ == '__main__':
     control_points_y = [round(x, 4) for x in solve(N, y_points)]
 
     # write output
-    outputFile = open("example1_output.txt", "w")
+    outputFile = open("test2_output.txt", "w")
     outputFile.write(str(degree) + '\n')
     outputFile.write(str(len(control_points_x)) + '\n')
 
@@ -166,5 +166,5 @@ if __name__ == '__main__':
 
     plt.legend(loc=0)
     plt.tight_layout()
-    plt.savefig('example1.jpg')
+    # plt.savefig('test2.jpg')
     plt.show()
